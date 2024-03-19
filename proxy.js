@@ -22,11 +22,11 @@ const server = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Headers', allowHeaders);
 
     if (req.method === 'OPTIONS') {
-        let curlCommand = `curl -X ${req.method} ${backendUrl}${req.url} `;
-        Object.keys(req.headers).forEach(key => {
-            curlCommand += `-H "${key}: ${req.headers[key]}" `;
-        });
-        console.log('Equivalent curl command:', curlCommand);
+        // let curlCommand = `curl -X ${req.method} ${backendUrl}${req.url} `;
+        // Object.keys(req.headers).forEach(key => {
+        //     curlCommand += `-H "${key}: ${req.headers[key]}" `;
+        // });
+        // console.log('Equivalent curl command:', curlCommand);
         res.writeHead(200);
         res.end();
         return;
