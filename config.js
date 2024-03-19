@@ -1,8 +1,3 @@
-// config.js
-module.exports = {
-    backendUrl: 'https://movie-journal.sayed-arafat.eu.org'
-};
-
 const config = {
     backendUrl: 'https://movie-journal.sayed-arafat.eu.org',
     cors: {
@@ -11,3 +6,5 @@ const config = {
         allowHeaders: 'Content-Type, Authorization'
     }
 };
+
+module.exports = config;
